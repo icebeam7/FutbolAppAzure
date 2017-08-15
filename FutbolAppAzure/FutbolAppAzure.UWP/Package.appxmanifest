@@ -6,12 +6,12 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   IgnorableNamespaces="uap mp">
 
-  <Identity 
-    Name="8085dfe1-551c-4600-9357-bf84b7cf1af7"
+  <Identity
+    Name="3d642cac-ccd5-4e0b-80db-2674805d5202"
     Publisher="CN=Luis"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="f736c883-f105-4d30-a719-4bf328872f5e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="3d642cac-ccd5-4e0b-80db-2674805d5202" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>FutbolAppAzure.UWP</DisplayName>
@@ -29,8 +29,8 @@
 
   <Applications>
     <Application Id="App"
-        Executable="$targetnametoken$.exe"
-        EntryPoint="FutbolAppAzure.UWP.App">
+      Executable="$targetnametoken$.exe"
+      EntryPoint="FutbolAppAzure.UWP.App">
       <uap:VisualElements
         DisplayName="FutbolAppAzure.UWP"
         Square150x150Logo="Assets\Square150x150Logo.png"

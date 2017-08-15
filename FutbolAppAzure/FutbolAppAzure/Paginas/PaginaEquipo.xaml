@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FutbolAppAzure.Paginas.PaginaEquipo">
+    <StackLayout Padding="10" Spacing="10">
+        <Label Text="Nombre:" FontSize="Medium" TextColor="Black" HorizontalOptions="Start" Margin="10" HorizontalTextAlignment="Start"/>
+        <Entry Text="{Binding Nombre}" Placeholder="Nombre" WidthRequest="200" FontSize="20" TextColor="Black" BackgroundColor="White" HorizontalOptions="Start" Margin="10" HorizontalTextAlignment="Start" FontAttributes="Bold"/>
+        <Label Text="Pais:" FontSize="Medium" TextColor="Black" HorizontalOptions="Start" Margin="10" HorizontalTextAlignment="Start"/>
+        <Entry Text="{Binding Pais}" Placeholder="Nombre" WidthRequest="200" FontSize="20" TextColor="Black" BackgroundColor="White" HorizontalOptions="Start" Margin="10" HorizontalTextAlignment="Start" FontAttributes="Bold"/>
+    </StackLayout>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="Guardar" Text="Guardar" Order="Primary" Priority="0" Clicked="Guardar_Clicked"/>
+        <ToolbarItem x:Name="Eliminar" Text="Eliminar" Order="Primary" Priority="1" Clicked="Eliminar_Clicked"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>
