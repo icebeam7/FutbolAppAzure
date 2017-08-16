@@ -20,7 +20,7 @@ namespace FutbolAppAzure.Paginas
 
         private async void Guardar_Clicked(object sender, EventArgs e)
         {
-            if (Equipo.Id != "")
+            if (!string.IsNullOrEmpty(Equipo.Id))
                 await App.ServicioAzure.ModificarEquipo(Equipo);
             else
                 await App.ServicioAzure.AgregarEquipo(Equipo);
